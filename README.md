@@ -30,10 +30,10 @@
 		
 		With node A haiving a left-child of node B and right-child of node C  
 		Create new node D with values of:  
-			value: any  
+			<pre>value: any  
 			parent: node A  
 			left: any/NULL  
-			right: node C  
+			right: node C</pre>  
 		Change node A with values of:  
 			value: no change  
 			parent: no change  
