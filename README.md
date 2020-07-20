@@ -9,7 +9,7 @@
 		to the left child of the new node
 	- use node insertion [method](Images/Insertion_of_binary_tree_node.PNG)
 		
-		With node A haiving a left-child of node B and right-child of node C
+		With node A haiving a left-child of node B and right-child of node C  
 		Create new node D with values of:  
 
 			value: any  
