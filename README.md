@@ -167,7 +167,7 @@
 
 16. Is perfect
 	- checks if a binary tree is full at a given node
-	- Definition:
+	- Definition:  
 		A perfect binary tree is a binary tree in which all interior nodes have two children
 		and all leaves have the same depth or same level.
 		eg. Number of leaf nodes == Height of tree * 2
