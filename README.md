@@ -54,11 +54,11 @@
 
 4. Is leaf
 	- checks if given node is a leaf
-	- Definition:
+	- Definition:  
 
-		Leaf − The node which does not have any child node is called the leaf node
+		Leaf − The node which does not have any child node is called the leaf node  
 
-	- Condition:
+	- Condition:  
 
 		If node is not NULL  
 		and  
@@ -70,12 +70,12 @@
 
 5. Is root
 	- checks if given node is a root
-	- Definition:
+	- Definition:  
 
 		Root − The node at the top of the tree is called root. There is only one root 
-				per tree and one path from the root node to any node.
+				per tree and one path from the root node to any node.  
 
-	-  Condition:
+	-  Condition:  
 
 		If node is not NULL  
 		and  
@@ -101,7 +101,7 @@
 	- return 0 on leaf node
 	- calc left height and right height recursively
 	- use larger of the two heights
-	- Condition:
+	- Condition:  
 
 		If left height < right height  
 			return right height + 1  
@@ -127,9 +127,9 @@
 
 12. Leaves
 	- counts the number of leaf nodes in a tree at a given node
-	- Definition:
+	- Definition:  
 
-		Leaf − The node which does not have any child node is called the leaf node
+		Leaf − The node which does not have any child node is called the leaf node  
 
 	- use any traversal method:
 
@@ -138,7 +138,7 @@
 		[post-order traversal](Images/Post_order_traversal.PNG)  
 
 	- increament a counter at each step only if node is a leaf node
-	- Condition:
+	- Condition:  
 
 		If (binary_tree_is_leaf(const binary_tree_t *node) == 1 (true))  
 			counter + 1  
@@ -147,9 +147,9 @@
 
 13. Nodes
 	- counts the number of non-leaf nodes in a tree at a given node
-	- Definition:
+	- Definition:  
 	
-		Leaf − The node which does not have any child node is called the leaf node
+		Leaf − The node which does not have any child node is called the leaf node  
 
 	- use any traversal method:
 
@@ -158,18 +158,18 @@
 		[post-order traversal](Images/Post_order_traversal.PNG)  
 
 	- increament a counter at each step only if node is a leaf node
-	- Condition:
+	- Condition:  
 
 		If (binary_tree_is_leaf(const binary_tree_t *node) == 0 (false))  
 			counter + 1  
-
+			
 	- return counter
 
 14. Balance factor
 	- measures the balance factor of a tree at a given node
 	- Definition:  
 
-		balanceFactor = height(leftSubTree) - height(rightSubTree)
+		balanceFactor = height(leftSubTree) - height(rightSubTree)  
 
 	- height(leftSubTree) = binary_tree_height(node->left)
 	- height(rightSubTree) = binary_tree_height(node->right)
@@ -178,10 +178,10 @@
 
 15. Is full
 	- checks if a binary tree is full at a given node
-	- Definition:
+	- Definition:  
 
 		A perfect binary tree is a tree in which every node has either 0 or 2 children  
-		eg. Number of leaf nodes == Height of tree * 2
+		eg. Number of leaf nodes == Height of tree * 2  
 
 	- recursive
 	- Conditions:  
@@ -193,7 +193,7 @@
 		If left not NUll && right not NULL  
 			return isFull(node->left) && isFull(node->right)  
 		//base  
-		return false
+		return false  
 
 16. Is perfect
 	- checks if a binary tree is full at a given node
@@ -201,12 +201,12 @@
 
 		A perfect binary tree is a binary tree in which all interior nodes have two children
 		and all leaves have the same depth or same level.  
-		eg. Number of leaf nodes == Height of tree * 2
+		eg. Number of leaf nodes == Height of tree * 2  
 
 	- count leaf nodes -> 			leafs = binary_tree_leaves(const binary_tree_t *tree)  
 	- calc height -> 				hegiht = binary_tree_height(const binary_tree_t *tree)  
 	- Condition:  
-	
+
 		If (leafs == (height * 2))  
 			return (1)  
 		else  
