@@ -56,15 +56,15 @@
 	- checks if given node is a leaf
 	- Definition:  
 
-		Leaf − The node which does not have any child node is called the leaf node  
+			Leaf − The node which does not have any child node is called the leaf node  
 
 	- Condition:  
 
-		If node is not NULL  
-		and  
-		If left child is NULL  
-		and  
-		If right child is NULL  
+			If node is not NULL  
+			and  
+			If left child is NULL  
+			and  
+			If right child is NULL  
 
 	- return 1 or 0
 
@@ -72,14 +72,14 @@
 	- checks if given node is a root
 	- Definition:  
 
-		Root − The node at the top of the tree is called root. There is only one root 
-				per tree and one path from the root node to any node.  
+			Root − The node at the top of the tree is called root. There is only one root 
+					per tree and one path from the root node to any node.  
 
 	-  Condition:  
 
-		If node is not NULL  
-		and  
-		If parent is NULL  
+			If node is not NULL  
+			and  
+			If parent is NULL  
 
 	- return 1 or 0
 
@@ -103,10 +103,10 @@
 	- use larger of the two heights
 	- Condition:  
 
-		If left height < right height  
-			return right height + 1  
-		else  
-			reutrn left height + 1  
+			If left height < right height  
+				return right height + 1  
+			else  
+				reutrn left height + 1  
 
 10. Depth
 	- measures the dpth of a tree from a given node
@@ -129,7 +129,7 @@
 	- counts the number of leaf nodes in a tree at a given node
 	- Definition:  
 
-		Leaf − The node which does not have any child node is called the leaf node  
+			Leaf − The node which does not have any child node is called the leaf node  
 
 	- use any traversal method:
 
@@ -140,8 +140,8 @@
 	- increament a counter at each step only if node is a leaf node
 	- Condition:  
 
-		If (binary_tree_is_leaf(const binary_tree_t *node) == 1 (true))  
-			counter + 1  
+			If (binary_tree_is_leaf(const binary_tree_t *node) == 1 (true))  
+				counter + 1  
 
 	- return counter
 
@@ -149,7 +149,7 @@
 	- counts the number of non-leaf nodes in a tree at a given node
 	- Definition:  
 	
-		Leaf − The node which does not have any child node is called the leaf node  
+			Leaf − The node which does not have any child node is called the leaf node  
 
 	- use any traversal method:
 
@@ -160,8 +160,8 @@
 	- increament a counter at each step only if node is a leaf node
 	- Condition:  
 
-		If (binary_tree_is_leaf(const binary_tree_t *node) == 0 (false))  
-			counter + 1  
+			If (binary_tree_is_leaf(const binary_tree_t *node) == 0 (false))  
+				counter + 1  
 			
 	- return counter
 
@@ -169,7 +169,7 @@
 	- measures the balance factor of a tree at a given node
 	- Definition:  
 
-		balanceFactor = height(leftSubTree) - height(rightSubTree)  
+			balanceFactor = height(leftSubTree) - height(rightSubTree)  
 
 	- height(leftSubTree) = binary_tree_height(node->left)
 	- height(rightSubTree) = binary_tree_height(node->right)
@@ -180,37 +180,37 @@
 	- checks if a binary tree is full at a given node
 	- Definition:  
 
-		A perfect binary tree is a tree in which every node has either 0 or 2 children  
-		eg. Number of leaf nodes == Height of tree * 2  
+			A perfect binary tree is a tree in which every node has either 0 or 2 children  
+			eg. Number of leaf nodes == Height of tree * 2  
 
 	- recursive
 	- Conditions:  
 
-		If empty  
-			return true  
-		If isLeafNode  
-			return true 
-		If left not NUll && right not NULL  
-			return isFull(node->left) && isFull(node->right)  
-		//base  
-		return false  
+			If empty  
+				return true  
+			If isLeafNode  
+				return true 
+			If left not NUll && right not NULL  
+				return isFull(node->left) && isFull(node->right)  
+			//base  
+			return false  
 
 16. Is perfect
 	- checks if a binary tree is full at a given node
 	- Definition:  
 
-		A perfect binary tree is a binary tree in which all interior nodes have two children
-		and all leaves have the same depth or same level.  
-		eg. Number of leaf nodes == Height of tree * 2  
+			A perfect binary tree is a binary tree in which all interior nodes have two children
+			and all leaves have the same depth or same level.  
+			eg. Number of leaf nodes == Height of tree * 2  
 
 	- count leaf nodes -> 			leafs = binary_tree_leaves(const binary_tree_t *tree)  
 	- calc height -> 				hegiht = binary_tree_height(const binary_tree_t *tree)  
 	- Condition:  
 
-		If (leafs == (height * 2))  
-			return (1)  
-		else  
-			return (0)  
+			If (leafs == (height * 2))  
+				return (1)  
+			else  
+				return (0)  
 
 17. Sibling
 	- finds the sibling of a node
