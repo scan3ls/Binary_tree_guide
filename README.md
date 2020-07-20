@@ -181,7 +181,6 @@
 	- Definition:  
 
 			A perfect binary tree is a tree in which every node has either 0 or 2 children  
-			eg. Number of leaf nodes == Height of tree * 2  
 
 	- recursive
 	- Conditions:  
